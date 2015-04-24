@@ -13,6 +13,12 @@ module Internal
       g.test_framework :rspec, :spec => true
     end
 
+    # Sufia inserts these, but for some reason the tests miss it...
+    config.assets.paths << config.root.join('vendor', 'assets', 'fonts')
+    config.assets.precompile << %r(vjs\.(?:eot|ttf|woff)$)
+    config.assets.precompile << %r(fontawesome-webfont\.(?:svg|ttf|woff)$)
+    config.assets.precompile += %w( ZeroClipboard.swf )
+
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers

@@ -16,11 +16,14 @@ To actually use them together smoothly, we will have to remove some parts of wor
 
     $ bundle install
     $ rake db:migrate
+    $ rake assets:precompile
     $ rails s
 
 To create a work, visit /concern/generic_works/new
 
 ## Testing
+
+Note: the feature tests will fail if you haven't run `rake assets:precompile`
 
     $ rake jetty:clean
     $ rake spec
