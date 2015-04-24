@@ -43,8 +43,10 @@ end
         gem 'kaminari', github: 'jcoyne/kaminari', branch: 'sufia'
 
 
-
-        gem 'sufia', :path => '/Users/matt/Develop/ruby/sufia'
+        gem 'sufia', github:'projecthydra/sufia', branch: 'master'
+        gem 'worthwhile', github:'projecthydra-labs/worthwhile', branch: 'master'
+        # gem 'sufia', :path => '../sufia'
+        # gem 'worthwhile', :path => '../worthwhile'
 
 gem 'rsolr', '~> 1.0.6'
 gem 'devise'
